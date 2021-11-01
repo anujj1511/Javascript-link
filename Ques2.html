@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link JS</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@325&display=swap');
+
+    * {
+        margin: 0px 0px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Bitter', serif;
+    }
+
+    body {
+        margin: 50px 50px;
+        background-color: #444444;
+        color: white;
+        letter-spacing: 0.1px;
+    }
+
+    h1,
+    h3,
+    h4 {
+        color: cyan;
+    }
+
+    p {
+        padding: 15px;
+    }
+
+    ol {
+        padding-left: 40px;
+    }
+
+    .ques {
+        font-weight: 800;
+        font-size: large;
+    }
+
+    button {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .hlight {
+        background: rgba(152, 248, 255, 0.363);
+    }
+</style>
+
+<body>
+    <div style="margin: 0px 20%;">
+        <h1 style="padding: 40px; text-align: center;">Question 2</h1>
+        <p class="ques">Q) Show the Scope of variables in JS using HTML page.</p>
+
+        <p style="text-align: right; padding: 15px;">
+            Name: Anuj Rajaram Jadhav <br>
+            Roll no: 2006179 <br>
+        </p>
+
+        <hr>
+
+        <!-- Intro -->
+        <p style="padding: 15px;">
+        <h3>JavaScript Scope</h3> <br>
+        <p>Scope determines the accessibility (visibility)
+            of variables.
+        </p>
+        <p>JavaScript has 3 types of scope:
+        <ol>
+            <li>Block scope</li>
+            <li>Function scope</li>
+            <li>Global scope</li>
+        </ol>
+        </p>
+        </p>
+
+        <hr>
+
+        <!-- Block Scope -->
+        <p style="padding: 15px;">
+
+        <h3>Block Scope</h3> <br>
+        <p> ES6 introduced two important new JavaScript
+            keywords: let and const.
+            <br>
+            These two keywords provide Block Scope in JavaScript.
+            <br>
+            Variables declared inside a { } block cannot be accessed from outside the block:
+        </p>
+
+        <h4>Example</h4><br>
+        <div style="background-color: #282C34; color: white; font-size: 15px;">
+            <div style="padding: 15px;">
+                <span>
+                    { <br>
+                    &nbsp;&nbsp;
+                    <span style="color:rgb(152, 152, 230)">let</span> x = <span style="color:red">2</span>;<br>
+                    }<br>
+                    <span style="color:rgb(165, 214, 165)">// x can NOT be used here </span>
+                </span>
+            </div>
+        </div>
+        </p>
+        <hr>
+
+        <!-- Function Scope -->
+        <p style="padding: 15px;">
+
+        <h3>Function Scope</h3> <br>
+        <p>Variables declared within a JavaScript function,
+            become <strong>LOCAL</strong> to the function.
+            <br>
+            JavaScript has function scope: Each function creates a new scope. <br>
+            Variables defined inside a function are not accessible (visible)
+            from outside the function. <br>
+            Variables declared with var, let and const are quite similar
+            when declared inside a function. <br>
+        </p>
+        <h4>Example</h4><br>
+        <div style="background-color: #282C34; color: white; font-size: 15px;">
+            <div style="padding: 15px;">
+                <span>
+                    <span style="color:rgb(165, 214, 165)">// code here can NOT use carName </span>
+                    <br> <br>
+                    <span style="color: rgb(152, 152, 230);">function</span> myFunction(){ <br>
+                    &nbsp;&nbsp;
+                    <span style="color:rgb(152, 152, 230)">let</span> carName = <span
+                        style="color:rgb(204, 255, 162)">"Ciaz"</span>;<br>
+                    &nbsp;&nbsp;<span style="color:rgb(165, 214, 165)">// code here CAN use carName </span><br>
+                    }<br>
+                    <br>
+                    <span style="color:rgb(165, 214, 165)">// code here can NOT use carName </span>
+                </span>
+            </div>
+        </div>
+        </p>
+
+        <hr>
+
+        <!-- Global Scope-->
+        <p style="padding: 15px;">
+
+        <h3>Global Scope</h3> <br>
+        <p>Variables declared <strong>Globally</strong> (outside any function) 
+            have <strong>Global Scope</strong>. <br>
+            <strong>Global</strong> variables can be accessed from anywhere 
+            in a JavaScript program. <br>
+            Variables declared with var, let and const are quite similar 
+            when declared outside a block. <br>
+        </p>
+        <h4>Example</h4><br>
+        <div style="background-color: #282C34; color: white; font-size: 15px;">
+            <div style="padding: 15px;">
+                <span>
+                    <span style="color:rgb(152, 152, 230)">let</span> carName = 
+                    <span style="color:rgb(204, 255, 162)">"Ciaz"</span>;<br>
+                    <span style="color:rgb(165, 214, 165)">// code here CAN use carName </span>
+                    <br> <br>
+                    <span style="color: rgb(152, 152, 230);">function</span> myFunction(){ <br>
+                    &nbsp;&nbsp;
+                    <span style="color:rgb(165, 214, 165)">// code here CAN use carName </span><br>
+                    }<br>
+                    <br>
+                    <span style="color:rgb(165, 214, 165)">// code here CAN use carName </span>
+                </span>
+            </div>
+        </div>
+        </p>
+
+        <hr>
+
+        <div>
+            <div style="text-align: center; padding: 15px;">
+                <a href="">
+                    <button>
+                        View Code
+                    </button>
+                </a>
+            </div>
+
+            <div style="text-align: right; padding: 15px 50px;">
+                <a href="">
+                    <button style="background-color: rgb(122, 124, 124);">
+                        Previous
+                    </button>
+                </a>
+                <a href="">
+                    <button style="margin-left: 20px;">
+                        Next
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
