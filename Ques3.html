@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link JS</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@325&display=swap');
+
+    * {
+        margin: 0px 0px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Bitter', serif;
+    }
+
+    body {
+        margin: 50px 50px;
+        background-color: #444444;
+        color: white;
+        letter-spacing: 0.1px;
+    }
+
+    h1,
+    h3,
+    h4 {
+        color: cyan;
+    }
+
+    p {
+        padding: 15px;
+    }
+
+    ol {
+        padding-left: 40px;
+    }
+
+    .ques {
+        font-weight: 800;
+        font-size: large;
+    }
+
+    button {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .hlight {
+        background: rgba(152, 248, 255, 0.363);
+    }
+</style>
+
+<body>
+    <div style="margin: 0px 20%;">
+        <h1 style="padding: 40px; text-align: center;">Question 3</h1>
+        <p class="ques">Q) Explain three difference between Undefined and not defined variables in JS using HTML page.
+        </p>
+
+        <p style="text-align: right; padding: 15px;">
+            Name: Anuj Rajaram Jadhav <br>
+            Roll no: 2006179 <br>
+        </p>
+
+        <hr>
+        <h4 style="margin-top: 15px; margin-bottom: 15px; text-align: center; color: rgb(64, 210, 255);"> Check console
+            for program's output</h4>
+        <hr>
+
+        <!-- Undefined -->
+        <p style="padding: 15px;">
+        <h3>Undefined:-</h3> <br>
+        <p>
+            <strong>There are certain cases when undefined value is returned in javascript as follows:-</strong>
+        <ol>
+            <li>
+                Whenever we declare a variable without assigning
+                any value to it, javascript implicitly assigns its
+                value as undefined.
+                <br> <br>
+                <div style="background-color: #282C34; color: white; font-size: 15px; border: 1px solid white;">
+                    <div style="padding: 15px;">
+                        <span>
+                            <span style="color:rgb(152, 152, 230)">let</span> variable; <br>
+                            <!-- <span style="color:rgb(152, 152, 230)">console.log(</span>
+                            <span style="color:rgb(165, 214, 165)">"Example 1:"</span> <span
+                                style="color: rgb(152, 152, 230)">)</span>;<br> -->
+                            <br>
+                            <span style="color:rgb(152, 152, 230)">console.log(</span> variable <span
+                                style="color: rgb(152, 152, 230)">)</span>;
+                            <span style="color:rgb(165, 214, 165)">&nbsp;&nbsp; //
+                                undefined</span>
+                            <br>
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+            </li>
+            <li>
+                When value is not assigned in array or object.
+                <br> <br>
+                <div style="background-color: #282C34; color: white; font-size: 15px; border: 1px solid white;">
+                    <div style="padding: 15px;">
+                        <span>
+                            <span style="color:rgb(152, 152, 230)">let</span> arr = [1, , 3, 4]; <br>
+                            <span style="color:rgb(152, 152, 230)">console.log(</span> arr <span
+                                style="color: rgb(152, 152, 230)">)</span>;
+                            <span style="color:rgb(165, 214, 165)">&nbsp;&nbsp; //[1, empty, 3, 4]</span>
+                            <br><br>
+                            <span style="color:rgb(152, 152, 230)">console.log(</span> typeof( arr[ 1 ] ) <span
+                                style="color: rgb(152, 152, 230)">)</span>;
+                            <span style="color:rgb(165, 214, 165)">&nbsp;&nbsp; //
+                                undefined</span>
+                            <br>
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+            </li>
+            <li>
+                When functions don’t have a return statement but are called for assigning a value to a variable.
+                <br><br>
+                <div style="background-color: #282C34; color: white; font-size: 15px; border: 1px solid white;">
+                    <div style="padding: 15px;">
+                        <span>
+                            <span style="color:rgb(152, 152, 230)">let mul </span> = <span
+                                style="color:rgb(152, 152, 230)">(</span> a, b <span style="color:rgb(152, 152, 230)">)
+                                => </span>{<br>
+                            &nbsp;&nbsp; <span style="color:rgb(152, 152, 230)">let </span> multiply = a * b;<br>
+                            <span style="color:rgb(165, 214, 165)">&nbsp;&nbsp; // return multiply</span> <br>
+                            } <br>
+
+                            <span style="color:rgb(152, 152, 230)">let </span> ans = <span
+                                style="color:rgb(152, 152, 230)"> mul( </span> 2, 3 <span
+                                style="color:rgb(152, 152, 230)"> ) </span>; <br>
+                            <br>
+                            <span style="color:rgb(152, 152, 230)">console.log(</span> ans <span
+                                style="color: rgb(152, 152, 230)">)</span>; <span
+                                style="color:rgb(165, 214, 165)">&nbsp;&nbsp; //
+                                undefined</span>
+                            <br>
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+                In the code block above, since we commented the return statement, the value of variable sum is given as
+                undefined in the output
+                <br> <br>
+            </li>
+        </ol>
+        </p>
+        </p>
+
+        <hr>
+
+        <!-- Not defined -->
+        <p style="padding: 15px;">
+        <h3>Not defined:-</h3> <br>
+        <p>
+            <strong>A not defined is a variable which is not declared at a given point of time with declaration keyword
+                like var, let or const.
+            </strong>
+
+        <div style="background-color: #282C34; color: white; font-size: 15px; border: 1px solid white;">
+            <div style="padding: 15px;">
+                <span>
+                    <span style="color:rgb(152, 152, 230)">console.log(</span>variable<span
+                        style="color: rgb(152, 152, 230)">)</span>;<br><br>
+                    <span style="color:rgb(152, 152, 230)">let</span> variable; <br>
+                    <span style="color:rgb(165, 214, 165)">//
+                        Uncaught ReferenceError: b is not defined</span>
+                    <br>
+                </span>
+            </div>
+        </div>
+        <br><br>
+        </p>
+        <hr>
+
+        <div>
+            <div style="text-align: center; padding: 15px;">
+                <a href="https://github.com/anujj1511/Javascript-link">
+                    <button>
+                        View Code
+                    </button>
+                </a>
+            </div>
+
+            <div style="text-align: right; padding: 15px 50px;">
+                <a href="">
+                    <button style="background-color: rgb(122, 124, 124);">
+                        Previous
+                    </button>
+                </a>
+                <a href="Ques2.html">
+                    <button style="margin-left: 20px;">
+                        Next
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+<script src="Ques3.js"></script>
+
+</html>
